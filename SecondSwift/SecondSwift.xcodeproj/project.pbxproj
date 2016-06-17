@@ -485,6 +485,7 @@
 				D601A7391D123938001F76AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D601A73A1D123938001F76AB /* Build configuration list for PBXNativeTarget "SecondSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				D601A73C1D123938001F76AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D601A73D1D123938001F76AB /* Build configuration list for PBXNativeTarget "SecondSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +503,7 @@
 				D601A73F1D123938001F76AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
