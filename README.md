@@ -4,6 +4,8 @@
 
 ## First Swift
 
-![Alt text](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
 
 ## Second Swift
+
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
