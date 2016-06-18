@@ -9,3 +9,7 @@
 ## Second Swift
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
+
+## Third Swift
+
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ThirdSwift/ThirdSwift.gif)
