@@ -13,3 +13,8 @@
 ## Third Swift
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ThirdSwift/ThirdSwift.gif)
+
+
+## Four Swift
+
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FourSwift/FourSwift.gif)
