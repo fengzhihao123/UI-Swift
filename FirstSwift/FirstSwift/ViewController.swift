@@ -43,14 +43,15 @@ class ViewController: UIViewController {
     
     func setupBtn() {
         //1.
-        pauseBtn.frame = CGRectMake(40 + (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.3, (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.2)
+        pauseBtn.frame = CGRectMake((SCREENWIDTH - 200)/3 * 2 + 100, SCREENHEIGHT * 0.3, 100, 100)
         pauseBtn.addTarget(self, action: #selector(ViewController.pause(_:)), forControlEvents: .TouchUpInside)
-        pauseBtn.setBackgroundImage(UIImage(named: "pause"), forState: .Normal)
+        pauseBtn.setImage(UIImage(named: "pause"), forState: .Normal)
+
         self.view.addSubview(pauseBtn)
         
         //2
-        playBtn.frame = CGRectMake(20, SCREENHEIGHT * 0.3, (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.2)
-        playBtn.setBackgroundImage(UIImage(named: "start"), forState: .Normal)
+        playBtn.frame = CGRectMake((SCREENWIDTH - 200)/3, SCREENHEIGHT * 0.3, 100, 100)
+        playBtn.setImage(UIImage(named: "play"), forState: .Normal)
         playBtn.addTarget(self, action: #selector(ViewController.play(_:)), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(playBtn)
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
         resetBtn.setTitle("reset", forState: .Normal)
         resetBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         resetBtn.layer.cornerRadius = 5.0
-        resetBtn.backgroundColor = UIColor.blueColor()
+        resetBtn.backgroundColor = UIColor.blackColor()
         resetBtn.addTarget(self, action: #selector(ViewController.reset(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(resetBtn)
     }
