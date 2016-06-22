@@ -37,7 +37,6 @@ class ViewController: UIViewController {
     
     func setupLabel () {
         timeLabel.frame = CGRectMake(20, 80, SCREENWIDTH - 40, SCREENHEIGHT * 0.1)
-        timeLabel.backgroundColor = UIColor.lightGrayColor()
         timeLabel.text = String(Counter)
         self.view.addSubview(timeLabel)
     }
@@ -45,25 +44,22 @@ class ViewController: UIViewController {
     func setupBtn() {
         //1.
         pauseBtn.frame = CGRectMake(40 + (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.3, (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.2)
-        pauseBtn.setTitleColor(UIColor.blueColor(), forState: .Normal)
         pauseBtn.addTarget(self, action: #selector(ViewController.pause(_:)), forControlEvents: .TouchUpInside)
-        pauseBtn.backgroundColor = UIColor.grayColor()
-        pauseBtn.setTitle("pause", forState: .Normal)
+        pauseBtn.setBackgroundImage(UIImage(named: "pause"), forState: .Normal)
         self.view.addSubview(pauseBtn)
         
         //2
         playBtn.frame = CGRectMake(20, SCREENHEIGHT * 0.3, (SCREENWIDTH - 60)/2, SCREENHEIGHT * 0.2)
-        playBtn.setTitle("play", forState: .Normal)
-        playBtn.setTitleColor(UIColor.blueColor(), forState: .Normal)
-
+        playBtn.setBackgroundImage(UIImage(named: "start"), forState: .Normal)
         playBtn.addTarget(self, action: #selector(ViewController.play(_:)), forControlEvents: .TouchUpInside)
-        playBtn.backgroundColor = UIColor.grayColor()
+        
         self.view.addSubview(playBtn)
         //3.
         resetBtn.frame = CGRectMake(SCREENWIDTH * 0.8, 20, 50, 40)
         resetBtn.setTitle("reset", forState: .Normal)
-        resetBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        resetBtn.backgroundColor = UIColor.grayColor()
+        resetBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        resetBtn.layer.cornerRadius = 5.0
+        resetBtn.backgroundColor = UIColor.blueColor()
         resetBtn.addTarget(self, action: #selector(ViewController.reset(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(resetBtn)
     }
