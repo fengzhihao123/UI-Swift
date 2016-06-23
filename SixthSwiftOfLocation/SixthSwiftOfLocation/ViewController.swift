@@ -18,13 +18,21 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupBackgroundImageView()
         self.setupLabelAndButton()
     }
+    //创建背景图
+    func setupBackgroundImageView(){
+        let bgImageView = UIImageView(image: UIImage(named: "bg"))
+        bgImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+        self.view.addSubview(bgImageView)
+    }
+    
     //创建label和button
     func setupLabelAndButton() {
         //1.label
         locationLabel.frame = CGRectMake(20, 64, SCREEN_WIDTH - 40, 50)
-        locationLabel.backgroundColor = UIColor.grayColor()
+        locationLabel.textColor = UIColor.whiteColor()
         self.view.addSubview(locationLabel)
         
         //2.button
@@ -54,7 +62,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     }
     
    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
+    //地理反编码
         CLGeocoder().reverseGeocodeLocation(manager.location!,completionHandler: { (placemarks, error) ->Void in
             if(error != nil){
                 self.locationLabel.text = "Reverse geocoder failed with error" + error!.localizedDescription
