@@ -60,7 +60,11 @@
  * 导入CoreLocation框架
  * 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
  * 在info.plist文件中添加NSLocationAlwaysUsageDescription，该字段是获取地理位置允许弹出框的Message
+ * 程序需在真机上运行
  
-### 2、效果图
+### 2、学习的知识点
+ * CoreLocation框架的简单使用
+
+### 3、效果图
 ![pic](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg)
 
