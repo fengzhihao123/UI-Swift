@@ -65,5 +65,4 @@
  * CoreLocation框架的简单使用
 
 ### 3、效果图
-![pic](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg)
-
+<img src="https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg" width="320" height="128" />
