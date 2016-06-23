@@ -53,3 +53,14 @@
 ### 运行图
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
+
+## Sixth Swift 
+
+###1、需要配置的地方
+ * 导入CoreLocation框架
+ * 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
+ * 在info.plist文件中添加NSLocationAlwaysUsageDescription，该字段是获取地理位置允许弹出框的Message
+ 
+### 2、效果图
+
+
