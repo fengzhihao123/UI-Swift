@@ -1,6 +1,9 @@
 
 #  30天swift代码版
 
+<a href="#C4">查看 Chapter 4。</a>
+
+
 ## First Swift -一个简易的定时器
 
 ### 学习的知识点
@@ -53,8 +56,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
 
-## Sixth Swift -定位
-
+<h2><a name="C4"> Sixth Swift -定位</a></h2>
 ###1、需要配置的地方
  * 导入CoreLocation框架
  * 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
