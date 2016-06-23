@@ -42,20 +42,20 @@ class ViewController: UIViewController {
     }
     
     func setupBtn() {
-        //1.
+        //1.暂停按钮
         pauseBtn.frame = CGRectMake((SCREENWIDTH - 200)/3 * 2 + 100, SCREENHEIGHT * 0.3, 100, 100)
         pauseBtn.addTarget(self, action: #selector(ViewController.pause(_:)), forControlEvents: .TouchUpInside)
         pauseBtn.setImage(UIImage(named: "pause"), forState: .Normal)
 
         self.view.addSubview(pauseBtn)
         
-        //2
+        //2开始按钮
         playBtn.frame = CGRectMake((SCREENWIDTH - 200)/3, SCREENHEIGHT * 0.3, 100, 100)
         playBtn.setImage(UIImage(named: "play"), forState: .Normal)
         playBtn.addTarget(self, action: #selector(ViewController.play(_:)), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(playBtn)
-        //3.
+        //3.重置按钮
         resetBtn.frame = CGRectMake(SCREENWIDTH * 0.8, 20, 50, 40)
         resetBtn.setTitle("reset", forState: .Normal)
         resetBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
