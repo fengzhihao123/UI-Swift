@@ -2,10 +2,15 @@
 #  30天swift代码版
 
 <a href="#C1">First Swift - 一个简易的定时器</a>
-<a href="#C2">Second Swift - UItableView</a>
+
+<a href="#C2">Second Swift - UITableView</a>
+
 <a href="#C3">Third Swift - 本地视频播放</a>
-<a href="#C4">## Four Swift - 滚动视图(UIScrollView)</a>
+
+<a href="#C4">Four Swift - 滚动视图(UIScrollView)</a>
+
 <a href="#C5">Five Swift - 滚动视图(UICollection)</a>
+
 <a href="#C6">Sixth Swift -定位</a>
 
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
@@ -20,7 +25,7 @@
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
 
 
-<h2><a name="C2">Second Swift-UItableView</a></h2>
+<h2><a name="C2">Second Swift-UITableView</a></h2>
 
 ### 学习的知识点
  * UITableView的使用
