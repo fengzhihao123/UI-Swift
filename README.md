@@ -2,7 +2,7 @@
 
 #  30天swift代码版
 
-## First Swift
+## First Swift -一个简易的定时器
 
 ### 学习的知识点
  * UILabel的使用
@@ -14,7 +14,7 @@
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
 
 
-## Second Swift
+## Second Swift-UItableView
 
 ### 学习的知识点
  * UITableView的使用
@@ -24,7 +24,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
 
-## Third Swift
+## Third Swift-本地视频播放
 
 ### 学习的知识点
   * UITableView的使用
@@ -45,7 +45,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FourSwift/FourSwift.gif)
 
-## Five Swift
+## Five Swift - 滚动视图
 
 ### 学习的知识点
   * UICollectionView的使用
@@ -54,7 +54,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
 
-## Sixth Swift 
+## Sixth Swift -定位
 
 ###1、需要配置的地方
  * 导入CoreLocation框架
@@ -62,5 +62,5 @@
  * 在info.plist文件中添加NSLocationAlwaysUsageDescription，该字段是获取地理位置允许弹出框的Message
  
 ### 2、效果图
-
+![pic](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg)
 
