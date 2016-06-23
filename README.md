@@ -1,10 +1,14 @@
 
 #  30天swift代码版
 
-<a href="#C4">查看 Chapter 4。</a>
+<a href="#C1">First Swift - 一个简易的定时器</a>
+<a href="#C2">Second Swift - UItableView</a>
+<a href="#C3">Third Swift - 本地视频播放</a>
+<a href="#C4">## Four Swift - 滚动视图(UIScrollView)</a>
+<a href="#C5">Five Swift - 滚动视图(UICollection)</a>
+<a href="#C6">Sixth Swift -定位</a>
 
-
-## First Swift -一个简易的定时器
+<h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
 ### 学习的知识点
  * UILabel的使用
@@ -16,7 +20,7 @@
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
 
 
-## Second Swift-UItableView
+<h2><a name="C2">Second Swift-UItableView</a></h2>
 
 ### 学习的知识点
  * UITableView的使用
@@ -26,7 +30,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
 
-## Third Swift-本地视频播放
+<h2><a name="C3">Third Swift-本地视频播放</a></h2>
 
 ### 学习的知识点
   * UITableView的使用
@@ -38,7 +42,8 @@
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ThirdSwift/ThirdSwift.gif)
 
 
-## Four Swift
+
+<h2><a name="C5">Four Swift - 滚动视图(UISCrollView)</a></h2>
 
 ### 学习的知识点
   * UIScrollView的使用
@@ -47,7 +52,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FourSwift/FourSwift.gif)
 
-## Five Swift - 滚动视图
+<h2><a name="C5">Five Swift - 滚动视图(UICollectionView)</a></h2>
 
 ### 学习的知识点
   * UICollectionView的使用
@@ -56,7 +61,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
 
-<h2><a name="C4"> Sixth Swift -定位</a></h2>
+<h2><a name="C6"> Sixth Swift -定位</a></h2>
 ###1、需要配置的地方
  * 导入CoreLocation框架
  * 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
