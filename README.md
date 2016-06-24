@@ -53,7 +53,7 @@
 
 
 
-<h2><a name="C5">Four Swift - 滚动视图(UISCrollView)</a></h2>
+<h2><a name="C4">Four Swift - 滚动视图(UISCrollView)</a></h2>
 
 ### 学习的知识点
 ```
