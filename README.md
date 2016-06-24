@@ -15,11 +15,12 @@
 
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
-```
+
 ### 学习的知识点
- * UILabel的使用
- * UIButton的使用
- * 定时器的使用
+```
+ 1.UILabel的使用
+ 2.UIButton的使用
+ 3.定时器的使用
 ```
 
 ### 运行图
@@ -30,9 +31,10 @@
 <h2><a name="C2">Second Swift-UITableView</a></h2>
 
 ### 学习的知识点
- * UITableView的使用
- * 系统部分字体的应用
-
+```
+ 1. UITableView的使用
+ 2. 系统部分字体的应用
+```
 ### 运行图
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
@@ -40,10 +42,11 @@
 <h2><a name="C3">Third Swift-本地视频播放</a></h2>
 
 ### 学习的知识点
-  * UITableView的使用
-  * 自定义协议：实现委托-代理设计模式
-  * 本地视频播放
-
+```
+  1. UITableView的使用
+  2. 自定义协议：实现委托-代理设计模式
+  3. 本地视频播放
+```
 ### 运行图
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ThirdSwift/ThirdSwift.gif)
@@ -53,8 +56,9 @@
 <h2><a name="C5">Four Swift - 滚动视图(UISCrollView)</a></h2>
 
 ### 学习的知识点
-  * UIScrollView的使用
-
+```
+  1. UIScrollView的使用
+```
 ### 运行图
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FourSwift/FourSwift.gif)
@@ -62,21 +66,24 @@
 <h2><a name="C5">Five Swift - 滚动视图(UICollectionView)</a></h2>
 
 ### 学习的知识点
-  * UICollectionView的使用
-
+```
+  1. UICollectionView的使用
+```
 ### 运行图
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
 
 <h2><a name="C6"> Sixth Swift -定位</a></h2>
 ###1、需要配置的地方
- * 导入CoreLocation框架
- * 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
- * 在info.plist文件中添加NSLocationAlwaysUsageDescription，该字段是获取地理位置允许弹出框的Message
- * 程序需在真机上运行
- 
+```
+ 1. 导入CoreLocation框架
+ 2. 在info.plist文件中添加NSAppTransportSecurity字段并且将NSAllowArbitryLoads属性设置为yes
+ 3. 在info.plist文件中添加NSLocationAlwaysUsageDescription，该字段是获取地理位置允许弹出框的Message
+ 4. 程序需在真机上运行
+ ```
 ### 2、学习的知识点
- * CoreLocation框架的简单使用
-
+```
+ 1. CoreLocation框架的简单使用
+```
 ### 3、效果图
 <img src="https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg" width="306" height="532" />
