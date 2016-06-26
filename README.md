@@ -13,6 +13,8 @@
 
 <a href="#C6">Sixth Swift -定位</a>
 
+<a href="#C7">Seventh Swift - UIRefresh</a>
+
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
 
@@ -87,3 +89,5 @@
 ```
 ### 3、效果图
 <img src="https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg" width="306" height="532" />
+
+## <a name="C7">Seventh Swift -UIRefresh</a>
