@@ -91,3 +91,11 @@
 <img src="https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg" width="306" height="532" />
 
 ## <a name="C7">Seventh Swift -UIRefresh</a>
+
+### 1、知识点
+```
+ 1.UIRefresh
+ 2.UITableView
+```
+### 2、效果图
+![gif]()
