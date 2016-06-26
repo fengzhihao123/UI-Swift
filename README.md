@@ -98,4 +98,4 @@
  2.UITableView
 ```
 ### 2、效果图
-![gif]()
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SeventhSwift-Refresh/SeventhSwift.gif)
