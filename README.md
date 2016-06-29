@@ -1,9 +1,7 @@
 
 #  30天swift代码版
 
-<a href="#C1">First Swift - 一个简易的定时器</a>
-
-<a href="#C2">Second Swift - UITableView</a>
+<a href="#C1">First Swift - 一个简易的定时器</a>            <a href="#C2">Second Swift - UITableView</a>
 
 <a href="#C3">Third Swift - 本地视频播放</a>
 
