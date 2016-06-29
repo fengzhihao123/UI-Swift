@@ -17,6 +17,9 @@
 
 <a href="#C8">Eighth Swift -PlayMp3</a>
 
+<a href="#C9">Ninth Swift -ScrollImage</a>
+
+
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
 ### 学习的知识点
@@ -105,3 +108,8 @@
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/eighthSwift-PalyMP3/EighthSwift.gif)
+
+## <a name="C9">Ninth Swift -ScrollImage</a>
+
+### 效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ninthSwift-ScrollImage/NinthSwift.gif)
