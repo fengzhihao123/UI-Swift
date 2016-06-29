@@ -15,8 +15,9 @@
 
 <a href="#C7">Seventh Swift - UIRefresh</a>
 
-<h2><a name="C1">First Swift -一个简易的定时器</a></h2>
+<a href="#C8">Eighth Swift -PlayMp3</a>
 
+<h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
 ### 学习的知识点
 ```
@@ -99,3 +100,8 @@
 ```
 ### 2、效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SeventhSwift-Refresh/SeventhSwift.gif)
+
+## <a name="C8">Eighth Swift -PlayMp3</a>
+
+### 效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/eighthSwift-PalyMP3/EighthSwift.gif)
