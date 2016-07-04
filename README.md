@@ -1,7 +1,7 @@
 
 #  30天swift代码版
 
-<a href="#C1">First Swift - 一个简易的定时器</a>
+<a href="#C1">First Swift - 一个简易的定时器</a> 
 
 <a href="#C2">Second Swift - UITableView</a>
 
@@ -16,6 +16,9 @@
 <a href="#C7">Seventh Swift - UIRefresh</a>
 
 <a href="#C8">Eighth Swift -PlayMp3</a>
+
+<a href="#C9">Ninth Swift -ScrollImage</a>
+
 
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
@@ -105,3 +108,8 @@
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/eighthSwift-PalyMP3/EighthSwift.gif)
+
+## <a name="C9">Ninth Swift -ScrollImage</a>
+
+### 效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ninthSwift-ScrollImage/NinthSwift.gif)
