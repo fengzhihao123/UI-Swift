@@ -21,6 +21,9 @@
 
 <a href="#C11">ElevenTh Swift - 自定义cell</a>
 
+<a href="#C12">TwelfTh Swift -带动画的登录注册</a>
+
+
 <h2><a name="C1">First Swift -一个简易的定时器</a></h2>
 
 ### 学习的知识点
@@ -119,3 +122,6 @@
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/EleventhSwift/cleartableviewcell.gif)
+
+### <a name="C12">Twelfth Swift - 带动画的登录注册</a>
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/12-TwelfSwift/012-swift.gif)
