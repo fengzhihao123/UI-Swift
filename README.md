@@ -1,30 +1,32 @@
 
 #  30天swift代码版
 
-<a href="#C1">First Swift - 一个简易的定时器</a> 
+<a href="#C1">01-一个简易的定时器</a> 
 
-<a href="#C2">Second Swift - UITableView</a>
+<a href="#C2">02-UITableView</a>
 
-<a href="#C3">Third Swift - 本地视频播放</a>
+<a href="#C3">03-本地视频播放</a>
 
-<a href="#C4">Four Swift - 滚动视图(UIScrollView)</a>
+<a href="#C4">04-滚动视图(UIScrollView)</a>
 
-<a href="#C5">Five Swift - 滚动视图(UICollection)</a>
+<a href="#C5">05-滚动视图(UICollection)</a>
 
-<a href="#C6">Sixth Swift -定位</a>
+<a href="#C6">06-定位</a>
 
-<a href="#C7">Seventh Swift - UIRefresh</a>
+<a href="#C7">07-UIRefresh</a>
 
-<a href="#C8">Eighth Swift -PlayMp3</a>
+<a href="#C8">08 -PlayMp3</a>
 
-<a href="#C9">Ninth Swift -ScrollImage</a>
+<a href="#C9">09 -ScrollImage</a>
 
-<a href="#C11">ElevenTh Swift - 自定义cell</a>
+<a href="#C11">011 - 自定义cell</a>
 
-<a href="#C12">TwelfTh Swift -带动画的登录注册</a>
+<a href="#C12">012 -带动画的登录注册</a>
+
+<a href="#C13">013 - 自定义带动画的cell</a>
 
 
-<h2><a name="C1">First Swift -一个简易的定时器</a></h2>
+<h2><a name="C1">01 -一个简易的定时器</a></h2>
 
 ### 学习的知识点
 ```
@@ -38,7 +40,7 @@
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
 
 
-<h2><a name="C2">Second Swift-UITableView</a></h2>
+<h2><a name="C2">02-UITableView</a></h2>
 
 ### 学习的知识点
 ```
@@ -49,7 +51,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
 
-<h2><a name="C3">Third Swift-本地视频播放</a></h2>
+<h2><a name="C3">03-本地视频播放</a></h2>
 
 ### 学习的知识点
 ```
@@ -63,7 +65,7 @@
 
 
 
-<h2><a name="C4">Four Swift - 滚动视图(UISCrollView)</a></h2>
+<h2><a name="C4">04 - 滚动视图(UISCrollView)</a></h2>
 
 ### 学习的知识点
 ```
@@ -73,7 +75,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FourSwift/FourSwift.gif)
 
-<h2><a name="C5">Five Swift - 滚动视图(UICollectionView)</a></h2>
+<h2><a name="C5">05 - 滚动视图(UICollectionView)</a></h2>
 
 ### 学习的知识点
 ```
@@ -83,7 +85,7 @@
 
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FiveSwift/FiveSwift.gif)
 
-<h2><a name="C6"> Sixth Swift -定位</a></h2>
+<h2><a name="C6"> 06 -定位</a></h2>
 ###1、需要配置的地方
 ```
  1. 导入CoreLocation框架
@@ -98,7 +100,7 @@
 ### 3、效果图
 <img src="https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SixthSwiftOfLocation/2.jpg" width="306" height="532" />
 
-## <a name="C7">Seventh Swift -UIRefresh</a>
+## <a name="C7">07 -UIRefresh</a>
 
 ### 1、知识点
 ```
@@ -108,20 +110,27 @@
 ### 2、效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SeventhSwift-Refresh/SeventhSwift.gif)
 
-## <a name="C8">Eighth Swift -PlayMp3</a>
+## <a name="C8">08 -PlayMp3</a>
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/eighthSwift-PalyMP3/EighthSwift.gif)
 
-## <a name="C9">Ninth Swift -ScrollImage</a>
+## <a name="C9">09 -ScrollImage</a>
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/ninthSwift-ScrollImage/NinthSwift.gif)
 
-### <a name="C11">Eleventh Swift -自定义cell</a>
+## <a name="C11">011-自定义cell</a>
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/EleventhSwift/cleartableviewcell.gif)
 
-### <a name="C12">Twelfth Swift - 带动画的登录注册</a>
+## <a name="C12">012 - 带动画的登录注册</a>
+
+### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/12-TwelfSwift/012-swift.gif)
+
+## <a name="C13">013-带动画的自定义cell</a>
+
+### 效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/13-CustomTableViewCell/013-swift.gif)
