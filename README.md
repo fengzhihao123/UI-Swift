@@ -25,7 +25,7 @@
 
 <a href="#C13">013 - 自定义带动画的cell</a>
 
-<a href="#14">014 - PickerView</a>
+<a href="#C14">014 - PickerView</a>
 
 <h2><a name="C1">01 -一个简易的定时器</a></h2>
 
