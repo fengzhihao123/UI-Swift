@@ -25,6 +25,7 @@
 
 <a href="#C13">013 - 自定义带动画的cell</a>
 
+<a href="#14">014 - PickerView</a>
 
 <h2><a name="C1">01 -一个简易的定时器</a></h2>
 
@@ -134,3 +135,7 @@
 
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/13-CustomTableViewCell/013-swift.gif)
+
+## <a name="C14">014 - PickerView</a>
+### 效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/14-Swift/014-swift.gif)
