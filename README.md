@@ -29,6 +29,8 @@
 
 <a href="#C15">015 - Animation</a>
 
+<a href="#C16">016 - Delegate</a>
+
 <h2><a name="C1">01 -一个简易的定时器</a></h2>
 
 ### 学习的知识点
@@ -145,3 +147,7 @@
 ## <a name="C15">015 - Animation</a>
 ###效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/15-twitter/15-twitter.gif)
+
+## <a name="C16">016 - Delegate</a>
+###效果图
+![gif]()
