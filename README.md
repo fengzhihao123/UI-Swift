@@ -27,6 +27,8 @@
 
 <a href="#C14">014 - PickerView</a>
 
+<a href="#C15">015 - Animation</a>
+
 <h2><a name="C1">01 -一个简易的定时器</a></h2>
 
 ### 学习的知识点
@@ -139,3 +141,7 @@
 ## <a name="C14">014 - PickerView</a>
 ### 效果图
 ![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/14-Swift/014-swift.gif)
+
+## <a name="C15">015 - Animation</a>
+###效果图
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/15-twitter/15-twitter.gif)
