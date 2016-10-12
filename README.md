@@ -42,7 +42,7 @@
 
 ### 运行图
 
-![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/FirstSwift/FirstSwift.gif)
+![gif]()
 
 
 <h2><a name="C2">02-UITableView</a></h2>
@@ -54,7 +54,7 @@
 ```
 ### 运行图
 
-![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/SecondSwift/SecondSwift.gif)
+![gif]()
 
 <h2><a name="C3">03-本地视频播放</a></h2>
 
