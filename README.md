@@ -1,17 +1,16 @@
 
-#  30天swift代码版
+#  Swift 搭建UI系列
+## Request
 
-<a href="#C1">01-一个简易的定时器</a> 
+* Xcode:Xcode8 
+* Swift:Swift3.0 
+* simulator:iphone 7 plus
 
-<h2><a name="C1">01 -一个简易的定时器</a></h2>
+<a href="#C1">01 - UILabel</a> 
 
-### 学习的知识点
-```
- 1.UILabel的使用
- 2.UIButton的使用
- 3.定时器的使用
-```
+<h2><a name="C1">01 - UILabel</a></h2>
+
 ### 运行图
 
-![gif]()
+![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/01-LabelAndButton/01-UILabel.gif)
 
