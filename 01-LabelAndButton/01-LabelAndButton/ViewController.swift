@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-    let titleLabel = UILabel()
     
+    let titleLabel = UILabel()
     let attributeBtn = UIButton.init(type: .custom)
     let obliqueBtn = UIButton.init(type: .custom)
     
