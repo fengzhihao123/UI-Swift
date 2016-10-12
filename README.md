@@ -150,4 +150,4 @@
 
 ## <a name="C16">016 - Delegate</a>
 ###效果图
-![gif]()
+![gif](https://github.com/fengzhihao123/30daysSwiftWithCode/blob/master/16-SlideMenu/16-delegate.gif)
