@@ -4,12 +4,13 @@
 //
 //  Created by 冯志浩 on 16/10/17.
 //  Copyright © 2016年 FZH. All rights reserved.
-//
+//  切换输入法的时候有问题
 
 import UIKit
 
 class ViewController: UIViewController {
     let textField = UITextField()
+    let textView = FZHTextView()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
@@ -71,10 +72,10 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.textField.resignFirstResponder()
+        self.textView.resignFirstResponder()
     }
     
     func setupTextView() -> Void {
-        let textView = FZHTextView()
         textView.backgroundColor = UIColor.gray
         textView.frame = CGRect(x: 0, y: 200, width: 300, height: 100)
         textView.placeholder = "textview..."
