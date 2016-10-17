@@ -44,9 +44,11 @@ class ViewController: UIViewController {
         textField.placeholder = "textfield..."
         view.addSubview(textField)
     }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+    
     func setupTextfieldNotification() -> Void {
         NotificationCenter.default.addObserver(self, selector: #selector(keyWillShow), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyWillHide), name: .UIKeyboardWillHide, object: nil)
@@ -54,7 +56,9 @@ class ViewController: UIViewController {
     
     func keyWillShow(notification: Notification) -> Void {
         let keyboardF: CGRect = ((notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue)!
-        UIView.animate(withDuration: 0.25) {
+        let keyboardT: Double = ((notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey]) as? Double)!
+        
+        UIView.animate(withDuration: keyboardT) {
             self.textField.transform = CGAffineTransform.init(translationX: 0, y: keyboardF.origin.y - self.textField.frame.size.height - self.textField.frame.origin.y)
         }
     }
@@ -65,10 +69,14 @@ class ViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.textField.resignFirstResponder()
+    }
+    
     func setupTextView() -> Void {
         let textView = FZHTextView()
         textView.backgroundColor = UIColor.gray
-        textView.frame = CGRect(x: 0, y: 300, width: 300, height: 200)
+        textView.frame = CGRect(x: 0, y: 200, width: 300, height: 100)
         textView.placeholder = "textview..."
         view.addSubview(textView)
     }

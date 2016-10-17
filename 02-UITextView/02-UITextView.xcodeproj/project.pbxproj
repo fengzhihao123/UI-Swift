@@ -15,6 +15,7 @@
 		D668E9121DB4725600BFB3BC /* _2_UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668E9111DB4725600BFB3BC /* _2_UITextViewTests.swift */; };
 		D668E91D1DB4725600BFB3BC /* _2_UITextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668E91C1DB4725600BFB3BC /* _2_UITextViewUITests.swift */; };
 		D668E92B1DB472A600BFB3BC /* FZHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668E92A1DB472A600BFB3BC /* FZHTextView.swift */; };
+		D668E92D1DB49D3800BFB3BC /* FZHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668E92C1DB49D3800BFB3BC /* FZHTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D668E91C1DB4725600BFB3BC /* _2_UITextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_UITextViewUITests.swift; sourceTree = "<group>"; };
 		D668E91E1DB4725600BFB3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D668E92A1DB472A600BFB3BC /* FZHTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTextView.swift; sourceTree = "<group>"; };
+		D668E92C1DB49D3800BFB3BC /* FZHTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D668E8FC1DB4725600BFB3BC /* AppDelegate.swift */,
+				D668E92C1DB49D3800BFB3BC /* FZHTextField.swift */,
 				D668E92A1DB472A600BFB3BC /* FZHTextView.swift */,
 				D668E8FE1DB4725600BFB3BC /* ViewController.swift */,
 				D668E9001DB4725600BFB3BC /* Main.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				D668E8FF1DB4725600BFB3BC /* ViewController.swift in Sources */,
 				D668E92B1DB472A600BFB3BC /* FZHTextView.swift in Sources */,
+				D668E92D1DB49D3800BFB3BC /* FZHTextField.swift in Sources */,
 				D668E8FD1DB4725600BFB3BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
