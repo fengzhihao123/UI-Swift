@@ -15,6 +15,7 @@
 		D60803F21DB5ED8F0036AFA0 /* _3_UIPickViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60803F11DB5ED8F0036AFA0 /* _3_UIPickViewTests.swift */; };
 		D60803FD1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60803FC1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift */; };
 		D6EF740A1DB7035E001752F5 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6EF74091DB7035E001752F5 /* area.plist */; };
+		D6EF74461DB75A5A001752F5 /* FZHPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EF74451DB75A5A001752F5 /* FZHPickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D60803FC1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_UIPickViewUITests.swift; sourceTree = "<group>"; };
 		D60803FE1DB5ED8F0036AFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6EF74091DB7035E001752F5 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		D6EF74451DB75A5A001752F5 /* FZHPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHPickView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D60803DC1DB5ED8F0036AFA0 /* AppDelegate.swift */,
+				D6EF74451DB75A5A001752F5 /* FZHPickView.swift */,
 				D60803DE1DB5ED8F0036AFA0 /* ViewController.swift */,
 				D60803E01DB5ED8F0036AFA0 /* Main.storyboard */,
 				D6EF74091DB7035E001752F5 /* area.plist */,
@@ -268,6 +271,7 @@
 			files = (
 				D60803DF1DB5ED8F0036AFA0 /* ViewController.swift in Sources */,
 				D60803DD1DB5ED8F0036AFA0 /* AppDelegate.swift in Sources */,
+				D6EF74461DB75A5A001752F5 /* FZHPickView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
