@@ -14,6 +14,7 @@
 		D60803E71DB5ED8F0036AFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60803E51DB5ED8F0036AFA0 /* LaunchScreen.storyboard */; };
 		D60803F21DB5ED8F0036AFA0 /* _3_UIPickViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60803F11DB5ED8F0036AFA0 /* _3_UIPickViewTests.swift */; };
 		D60803FD1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60803FC1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift */; };
+		D6EF740A1DB7035E001752F5 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6EF74091DB7035E001752F5 /* area.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D60803F81DB5ED8F0036AFA0 /* 03-UIPickViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-UIPickViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60803FC1DB5ED8F0036AFA0 /* _3_UIPickViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_UIPickViewUITests.swift; sourceTree = "<group>"; };
 		D60803FE1DB5ED8F0036AFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EF74091DB7035E001752F5 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D60803DC1DB5ED8F0036AFA0 /* AppDelegate.swift */,
 				D60803DE1DB5ED8F0036AFA0 /* ViewController.swift */,
 				D60803E01DB5ED8F0036AFA0 /* Main.storyboard */,
+				D6EF74091DB7035E001752F5 /* area.plist */,
 				D60803E31DB5ED8F0036AFA0 /* Assets.xcassets */,
 				D60803E51DB5ED8F0036AFA0 /* LaunchScreen.storyboard */,
 				D60803E81DB5ED8F0036AFA0 /* Info.plist */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60803E71DB5ED8F0036AFA0 /* LaunchScreen.storyboard in Resources */,
+				D6EF740A1DB7035E001752F5 /* area.plist in Resources */,
 				D60803E41DB5ED8F0036AFA0 /* Assets.xcassets in Resources */,
 				D60803E21DB5ED8F0036AFA0 /* Main.storyboard in Resources */,
 			);
@@ -512,6 +516,7 @@
 				D60804031DB5ED8F0036AFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D60804041DB5ED8F0036AFA0 /* Build configuration list for PBXNativeTarget "03-UIPickViewTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				D60804061DB5ED8F0036AFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D60804071DB5ED8F0036AFA0 /* Build configuration list for PBXNativeTarget "03-UIPickViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				D60804091DB5ED8F0036AFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,10 +10,22 @@ import UIKit
 
 class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     var pickView = UIPickerView()
+    var provinceArr: NSArray = [""]
+    var citiesArr: NSArray = [""]
+    var areaArr: NSArray = [""]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPickView()
+        
+        let path = Bundle.main.path(forResource: "area", ofType: "plist")
+        provinceArr = NSArray.init(contentsOfFile: path!)!
+        let dict = provinceArr[4] as! NSDictionary
+        citiesArr = dict.value(forKey: "cities") as! NSArray
+        
+        let dict2 = citiesArr[0] as! NSDictionary
+        areaArr = dict2.value(forKey: "areas") as! NSArray
     }
 
     func setupPickView() -> Void {
@@ -29,16 +41,31 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
+        if component == 0 {
+            return provinceArr.count
+        }else if component == 1{
+            return 10
+        }else{
+            return 10
+        }
     }
     
     //MARK: UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "123"
+        if component == 0 {
+           return "123"
+        }else{
+            return "234"
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 30
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+//        pickerView.reloadAllComponents()
     }
     
 }
