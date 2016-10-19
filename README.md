@@ -14,7 +14,7 @@
 
 <h2><a href="#C1">01 - UILabel</a> </h2>
 <h2><a href="#C2">02 - UITextField</a></h2>
-
+<h2><a href="#C3">03 - UIPickView</a></h2>
 
 
 
@@ -32,3 +32,7 @@
 ###gif 
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/02-UITextView/02-UITextField:UITextView.gif)
 
+
+<h2><a name="C3">03 - UIPickView</a></h2>
+
+![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/03-UIPickView/03-UIPickView.gif)
