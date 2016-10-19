@@ -120,6 +120,7 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
         }
         
     }
+    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)

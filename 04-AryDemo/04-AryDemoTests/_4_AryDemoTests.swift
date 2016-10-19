@@ -1,15 +1,15 @@
 //
-//  _4___AryDemoTests.swift
-//  04 - AryDemoTests
+//  _4_AryDemoTests.swift
+//  04-AryDemoTests
 //
 //  Created by 冯志浩 on 16/10/19.
 //  Copyright © 2016年 FZH. All rights reserved.
 //
 
 import XCTest
-@testable import _4___AryDemo
+@testable import _4_AryDemo
 
-class _4___AryDemoTests: XCTestCase {
+class _4_AryDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
