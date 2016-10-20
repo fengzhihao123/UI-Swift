@@ -17,10 +17,7 @@ class FZHTextField: UITextField {
         setupTextfieldNotification()
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
+    //添加对键盘的监听
     func setupTextfieldNotification() -> Void {
         NotificationCenter.default.addObserver(self, selector: #selector(keyWillShow), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyWillHide), name: .UIKeyboardWillHide, object: nil)
@@ -34,7 +31,6 @@ class FZHTextField: UITextField {
         UIView.animate(withDuration: 0.25) {
             self.transform = CGAffineTransform.init(translationX: 0, y: keyboardF.origin.y - self.frame.size.height - self.frame.origin.y)
         }
-        print(self.frame)
     }
     
     func keyWillHide(notification: Notification) -> Void {
@@ -42,7 +38,11 @@ class FZHTextField: UITextField {
             self.frame.origin.y = self.textFieldY
         }
     }
-    
+    //移除监听
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
