@@ -14,6 +14,7 @@
 		D61B7EED1DBF393600A762DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61B7EEB1DBF393600A762DE /* LaunchScreen.storyboard */; };
 		D61B7EF81DBF393600A762DE /* _5_UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B7EF71DBF393600A762DE /* _5_UITableViewTests.swift */; };
 		D61B7F031DBF393600A762DE /* _5_UITableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B7F021DBF393600A762DE /* _5_UITableViewUITests.swift */; };
+		D61B7F111DBF399500A762DE /* FZHTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B7F101DBF399500A762DE /* FZHTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D61B7EFE1DBF393600A762DE /* 05-UITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-UITableViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61B7F021DBF393600A762DE /* _5_UITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5_UITableViewUITests.swift; sourceTree = "<group>"; };
 		D61B7F041DBF393600A762DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61B7F101DBF399500A762DE /* FZHTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				D61B7EE21DBF393600A762DE /* AppDelegate.swift */,
+				D61B7F101DBF399500A762DE /* FZHTableViewCell.swift */,
 				D61B7EE41DBF393600A762DE /* ViewController.swift */,
 				D61B7EE61DBF393600A762DE /* Main.storyboard */,
 				D61B7EE91DBF393600A762DE /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				D61B7EE51DBF393600A762DE /* ViewController.swift in Sources */,
 				D61B7EE31DBF393600A762DE /* AppDelegate.swift in Sources */,
+				D61B7F111DBF399500A762DE /* FZHTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
