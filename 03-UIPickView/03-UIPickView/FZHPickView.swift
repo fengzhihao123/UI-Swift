@@ -118,7 +118,6 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
         }else{
             areaStr = areaArr[areaNum] as! String
         }
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
