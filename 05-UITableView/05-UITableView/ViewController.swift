@@ -12,13 +12,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let tableView = UITableView()
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-    var dataSource = ["2333","5555","asdf","xxfa","ddd","123"]
-    
+    var dataSource: NSMutableArray = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupFooterView()
+        dataSource = NSMutableArray.init(array: ["2333","5555","asdf","xxfa","ddd","123"])
     }
     
     func setupTableView() -> Void {
@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = FZHTableViewCell.init(style: .default, reuseIdentifier: "FZHTableViewCell")
-        cell.titleLabel.text = dataSource[indexPath.row]
+        cell.titleLabel.text = dataSource[indexPath.row] as? String
         return cell
     }
    //MARK: UITableViewDelegate
@@ -112,6 +112,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 }
             }
         }else if btn.tag == 1002{//delete
+            //
+            let selectArray = tableView.indexPathsForSelectedRows
+            let tempArray: NSMutableArray = [""]
+            
+            if selectArray != nil {
+                for num in 0..<selectArray!.count {
+                    let index = selectArray?[num]
+                    let indexNum = (index?.row)! as Int
+                    tempArray.add(dataSource[indexNum])
+                }
+                for index in 0..<tempArray.count {
+                    let obj = tempArray[index]
+                    dataSource.remove(obj)
+                }
+                
+            tableView.reloadData()
+            }
             
         }else{//cancel
             tableView.isEditing = false
