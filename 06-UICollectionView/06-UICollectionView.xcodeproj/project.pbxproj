@@ -14,6 +14,7 @@
 		D6BDD2081DC02EFC00279C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BDD2061DC02EFC00279C91 /* LaunchScreen.storyboard */; };
 		D6BDD2131DC02EFC00279C91 /* _6_UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BDD2121DC02EFC00279C91 /* _6_UICollectionViewTests.swift */; };
 		D6BDD21E1DC02EFC00279C91 /* _6_UICollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BDD21D1DC02EFC00279C91 /* _6_UICollectionViewUITests.swift */; };
+		D6BDD26A1DC0808700279C91 /* FZHCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BDD2691DC0808700279C91 /* FZHCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D6BDD2191DC02EFC00279C91 /* 06-UICollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "06-UICollectionViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BDD21D1DC02EFC00279C91 /* _6_UICollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _6_UICollectionViewUITests.swift; sourceTree = "<group>"; };
 		D6BDD21F1DC02EFC00279C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BDD2691DC0808700279C91 /* FZHCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZHCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				D6BDD1FD1DC02EFC00279C91 /* AppDelegate.swift */,
 				D6BDD1FF1DC02EFC00279C91 /* ViewController.swift */,
+				D6BDD2691DC0808700279C91 /* FZHCollectionViewCell.swift */,
 				D6BDD2011DC02EFC00279C91 /* Main.storyboard */,
 				D6BDD2041DC02EFC00279C91 /* Assets.xcassets */,
 				D6BDD2061DC02EFC00279C91 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BDD2001DC02EFC00279C91 /* ViewController.swift in Sources */,
+				D6BDD26A1DC0808700279C91 /* FZHCollectionViewCell.swift in Sources */,
 				D6BDD1FE1DC02EFC00279C91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
