@@ -1,6 +1,6 @@
 //
-//  _5_UICollectionViewUITests.swift
-//  05-UICollectionViewUITests
+//  _6_UICollectionViewUITests.swift
+//  06-UICollectionViewUITests
 //
 //  Created by 冯志浩 on 16/10/26.
 //  Copyright © 2016年 FZH. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class _5_UICollectionViewUITests: XCTestCase {
+class _6_UICollectionViewUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
