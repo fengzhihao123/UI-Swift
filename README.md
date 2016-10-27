@@ -35,4 +35,4 @@
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/03-UIPickView/03-UIPickView.gif)
 
 <h2><a name="C4">04 - UIScrollView</a></h2>
-![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/05-UIScrollView/05-UIScrollView.gif)
+![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/04-UIScrollView/05-UIScrollView.gif)
