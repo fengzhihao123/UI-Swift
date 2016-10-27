@@ -17,9 +17,12 @@
 <h2><a href="#C3">03 - UIPickView</a></h2>
 <h2><a href="#C4">04 - UIScrollView</a></h2>
 <h2><a href="#C5">05 - UITableView</a></h2>
-
+<h2><a href="#C6">06 - UICollectionView</a></h2>
 
 <h2><a name="C1">01 - UILabel</a></h2>
+
+* 高度自适应label
+* 斜体label
 
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/01-LabelAndButton/01-UILabel.gif)
 
@@ -33,10 +36,21 @@
 
 <h2><a name="C3">03 - UIPickView</a></h2>
 
+* 三级联动地址选择器
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/03-UIPickView/03-UIPickView.gif)
 
 <h2><a name="C4">04 - UIScrollView</a></h2>
+
+* 自动轮播图
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/04-UIScrollView/05-UIScrollView.gif)
 
 <h2><a name="C5">05 - UITableView</a></h2>
+
+* 左划删除
+* 全选、单选删除
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/05-UITableView/05-UITableView.gif)
+
+<h2><a name="C6">06 - UICollectionView</a></h2>
+
+* 瀑布流
+![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/06-UICollectionView/06-UICollectionView.gif)
