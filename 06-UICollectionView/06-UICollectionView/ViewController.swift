@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+    
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+    
     let layout = UICollectionViewFlowLayout()
     var collectionView: UICollectionView? = nil
+    let cellHeightArr: NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +24,10 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     func setupCollectionView() -> Void {
         //初始化layout
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 110, height: 150)
+        let layout = FZHCollectionViewLayout()
+
         //创建collectionView
-        collectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 300), collectionViewLayout: layout)
+        collectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), collectionViewLayout: layout)
         collectionView?.backgroundColor = UIColor.brown
         //注册cell
         collectionView?.register(FZHCollectionViewCell.self, forCellWithReuseIdentifier: "FZHCollectionViewCell")
@@ -40,15 +42,14 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 200
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "FZHCollectionViewCell", for: indexPath) as! FZHCollectionViewCell
-        item.titleLabel.text = "ssss"
         return item
     }
-
+    
 }
 
