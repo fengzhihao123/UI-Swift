@@ -67,3 +67,7 @@ eg:
 * 瀑布流
 
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/06-UICollectionView/06-UICollectionView.gif)
+
+## License
+
+UI-Swift is released under the MIT license. See LICENSE for details.
