@@ -15,6 +15,8 @@ eg:
 
 * Image Literal，用法同上
 
+* `command`+`option`+`/`:添加函数注释说明（此快捷键适用OC）
+
 ## Request
 
 * Xcode:Xcode8 
