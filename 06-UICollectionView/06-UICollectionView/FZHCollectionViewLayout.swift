@@ -26,11 +26,11 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
     //cell width
     var cellWidth = 0
     //cell x
-    var cellXArray: NSMutableArray = []
+    var cellXArray:[Int] = []
     //存储每个cell的随机高度，避免每次加载的随机高度都不同
-    var cellHeightArray: NSMutableArray = []
+    var cellHeightArray:[Int] = []
     //记录每列Cell的最新Cell的Y坐标
-    var cellYArray: NSMutableArray = []
+    var cellYArray:[Int] = []
     
     /**
      * 该方法是预加载layout, 只会被执行一次
@@ -71,13 +71,13 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         let attributes = UICollectionViewLayoutAttributes.init(forCellWith: indexPath)
         var frame:CGRect = .zero
-        let cellHeight = cellHeightArray[indexPath.row] as! CGFloat
+        let cellHeight = CGFloat(cellHeightArray[indexPath.row])
         let minYIndex = minCellYArray(array: cellYArray)
-        let tempX: CGFloat = cellXArray[Int(minYIndex)] as! CGFloat
-        let tempY: CGFloat = cellYArray[Int(minYIndex)] as! CGFloat
+        let tempX: CGFloat = CGFloat(cellXArray[Int(minYIndex)])
+        let tempY: CGFloat = CGFloat(cellYArray[Int(minYIndex)])
         frame = CGRect(x: tempX, y: tempY, width: CGFloat(cellWidth), height: cellHeight)
         //更新相应的Y坐标
-        cellYArray[Int(minYIndex)] = tempY + cellHeight + CGFloat(padding)
+        cellYArray[Int(minYIndex)] = Int(tempY + cellHeight + CGFloat(padding))
         //计算每个Cell的位置
         attributes.frame = frame
         return attributes
@@ -99,10 +99,9 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
         //计算每个Cell的宽度
         cellWidth = (Int(SCREEN_WIDTH) - (columnCount - 1) * padding) / columnCount
         //为每个Cell计算X坐标
-        cellXArray = NSMutableArray.init(capacity: columnCount)
         for index in 0..<columnCount {
             let tempX = index * (cellWidth + padding)
-            cellXArray.add(tempX)
+            cellXArray.append(tempX)
         }
     }
     
@@ -110,20 +109,16 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
      * 初始化每列Cell的Y轴坐标
      */
     func initCellYArray() -> Void {
-        cellYArray = NSMutableArray.init(capacity: columnCount)
-        for index in 0..<columnCount {
-            cellYArray[index] = 0
-        }
+        cellYArray = Array(repeating: 0, count: columnCount)
     }
     
     /**
      * 随机生成Cell的高度
      */
     func initCellHeight() -> Void {
-        cellHeightArray = NSMutableArray.init(capacity: numberOfCellsInSections)
         for _ in 0..<numberOfCellsInSections {
             let cellHeight = Int(arc4random() % 100) + cellMinHeight
-            cellHeightArray.add(cellHeight)
+            cellHeightArray.append(cellHeight)
         }
     }
     
@@ -131,13 +126,13 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
      * 求CellY数组中的最大值并返回
      */
 
-    func maxCellYArray(array: NSMutableArray) -> CGFloat {
+    func maxCellYArray(array: Array<Int>) -> CGFloat {
         if array.count == 0 {
             return 0
         }
-        var max = array[0] as! CGFloat
+        var max = CGFloat(array[0])
         for index in 0..<array.count {
-            let temp = array[index] as! CGFloat
+            let temp = CGFloat(array[index])
             if max < temp {
                 max = temp
             }
@@ -148,22 +143,20 @@ class FZHCollectionViewLayout: UICollectionViewLayout {
     /**
      * 求CellY数组中的最小值的索引
      */
-    func minCellYArray(array: NSMutableArray) -> CGFloat {
+    func minCellYArray(array: Array<Int>) -> CGFloat {
         if array.count == 0 {
             return 0
         }
         
         var minIndex: CGFloat = 0
-        var min = array[0] as! CGFloat
+        var min = CGFloat(array[0])
         for index in 0..<array.count {
-            let temp = array[index] as! CGFloat
+            let temp = CGFloat(array[index])
             if min > temp {
                 min = temp
                 minIndex = CGFloat(index)
             }
-            
         }
         return minIndex
     }
-   
 }
