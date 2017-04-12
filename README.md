@@ -29,6 +29,7 @@ eg:
 <h2><a href="#C4">04 - UIScrollView</a></h2>
 <h2><a href="#C5">05 - UITableView</a></h2>
 <h2><a href="#C6">06 - UICollectionView</a></h2>
+<h2><a href="#C7">07 - 扫描二维码</a></h2>
 
 <h2><a name="C1">01 - UILabel</a></h2>
 
@@ -70,6 +71,9 @@ eg:
 
 ![gif](https://github.com/fengzhihao123/UI-Swift/blob/master/06-UICollectionView/06-UICollectionView.gif)
 
+<h2><a name="C7">07 - 扫描二维码</a></h2>
+
+[参考链接](http://swift.gg/2017/01/18/barcode-reader-swift/)
 ## 广告
 
 大家如果敲完这几个项目，可以看一下我的这个[项目](https://github.com/fengzhihao123/FZHKit)。里面都是一些项目常用的功能。
