@@ -26,34 +26,34 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
     }
     
     func setupData() -> Void {
-        
-        let path = Bundle.main.path(forResource: "area", ofType: "plist")
-        let tempProvinceArr = NSArray.init(contentsOfFile: path!)!
-        
-        for (_, value) in tempProvinceArr.enumerated() {
-            let temp = NSMutableArray.init(array: provinceArr)
-            let dict = value as! NSDictionary
-            temp.add(dict.value(forKey: "state"))
-            provinceArr = temp
+        if let path = Bundle.main.path(forResource: "area", ofType: "plist") {
+            if let tempProvinceArr = NSArray.init(contentsOfFile: path) {
+                for (_, value) in tempProvinceArr.enumerated() {
+                    let temp = NSMutableArray.init(array: provinceArr)
+                    let dict = value as! NSDictionary
+                    temp.add(dict.value(forKey: "state") ?? "")
+                    provinceArr = temp
+                }
+                
+                let cityDict = tempProvinceArr.firstObject as! NSDictionary
+                let cityArr = cityDict.value(forKey: "cities") as! NSArray
+                let tempCitysArr = NSMutableArray.init(array: cityArr)
+                for (_, value) in tempCitysArr.enumerated() {
+                    let temp = NSMutableArray.init(array: citiesArr)
+                    let dict = value as! NSDictionary
+                    temp.add(dict.value(forKey: "city") ?? "")
+                    citiesArr = temp
+                }
+                
+                let areaDict = tempCitysArr.firstObject as! NSDictionary
+                let areaArray = areaDict.value(forKey: "areas") as! NSArray
+                areaArr = NSMutableArray.init(array: areaArray)
+                
+                provinceStr = provinceArr.firstObject as! String
+                citiesStr = citiesArr.firstObject as! String
+                areaStr = ((areaArr.count == 0) ? "" : areaArr.firstObject as! String)
+            }
         }
-        
-        let cityDict = tempProvinceArr.firstObject as! NSDictionary
-        let cityArr = cityDict.value(forKey: "cities") as! NSArray
-        let tempCitysArr = NSMutableArray.init(array: cityArr)
-        for (_, value) in tempCitysArr.enumerated() {
-            let temp = NSMutableArray.init(array: citiesArr)
-            let dict = value as! NSDictionary
-            temp.add(dict.value(forKey: "city"))
-            citiesArr = temp
-        }
-        
-        let areaDict = tempCitysArr.firstObject as! NSDictionary
-        let areaArray = areaDict.value(forKey: "areas") as! NSArray
-        areaArr = NSMutableArray.init(array: areaArray)
-        
-        provinceStr = provinceArr.firstObject as! String
-        citiesStr = citiesArr.firstObject as! String
-        areaStr = ((areaArr.count == 0) ? "" : areaArr.firstObject as! String)
     }
     
     //MARK: UIPickerViewDataSource
@@ -88,7 +88,7 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
             for (_, value) in selectArr.enumerated() {
                 let temp = NSMutableArray.init(array: citiesArr)
                 let dict = value as! NSDictionary
-                temp.add(dict.value(forKey: "city"))
+                temp.add(dict.value(forKey: "city") ?? "")
                 citiesArr = temp
             }
             let areaDict = selectArr.firstObject as! NSDictionary

@@ -24,12 +24,13 @@ class FZHTextField: UITextField {
     }
     
     func keyWillShow(notification: Notification) -> Void {
-        let keyboardF: CGRect = ((notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue)!
-        if self.frame.origin.y < (keyboardF.origin.y - self.frame.size.height - self.frame.origin.y) {
-            return
-        }
-        UIView.animate(withDuration: 0.25) {
-            self.transform = CGAffineTransform.init(translationX: 0, y: keyboardF.origin.y - self.frame.size.height - self.frame.origin.y)
+        if let keyboardF = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.frame.origin.y < (keyboardF.origin.y - self.frame.size.height - self.frame.origin.y) {
+                return
+            }
+            UIView.animate(withDuration: 0.25) {
+                self.transform = CGAffineTransform.init(translationX: 0, y: keyboardF.origin.y - self.frame.size.height - self.frame.origin.y)
+            }
         }
     }
     
