@@ -27,18 +27,18 @@ class FZHTextView: UITextView {
     override func awakeFromNib() {
         super.awakeFromNib()
         placeholderColor = UIColor.lightGray
-        NotificationCenter.default.addObserver(self, selector: #selector(textChanged(noti:)), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textChanged(noti:)), name:  UITextView.textDidChangeNotification, object: nil)
     }
     
-    func textChanged(noti: NSNotification) -> Void {
-        if placeholder.characters.count == 0 {
+    @objc func textChanged(noti: NSNotification) {
+        if placeholder.count == 0 {
             return
         }
         
         UIView.animate(withDuration: 0.25) {
-            if self.text.characters.count == 0{
+            if self.text.count == 0 {
                 self.viewWithTag(999)?.alpha = 1
-            }else{
+            } else {
                 self.viewWithTag(999)?.alpha = 0
             }
         }
@@ -46,7 +46,8 @@ class FZHTextView: UITextView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        if placeholder.characters.count > 0 {
+        
+        if placeholder.count > 0 {
             placeHolderLabel.frame = CGRect(x: 5, y: 5, width: self.bounds.size.width - 16, height: 0)
             placeHolderLabel.lineBreakMode = .byWordWrapping
             placeHolderLabel.numberOfLines = 0
@@ -58,9 +59,10 @@ class FZHTextView: UITextView {
             addSubview(placeHolderLabel)
             placeHolderLabel.text = placeholder
             placeHolderLabel.sizeToFit()
-            sendSubview(toBack: placeHolderLabel)
+            sendSubviewToBack(placeHolderLabel)
         }
-        if text.characters.count == 0 && placeholder.characters.count > 0 {
+        
+        if text.count == 0 && placeholder.count > 0 {
             self.viewWithTag(999)?.alpha = 1
         }
     }

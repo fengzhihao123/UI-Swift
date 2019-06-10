@@ -62,7 +62,7 @@ class FZHScrollView: UIView,UIScrollViewDelegate {
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(scrollViewAutoScroll), userInfo: nil, repeats: true)
     }
     
-    func scrollViewAutoScroll() -> Void {
+    @objc func scrollViewAutoScroll() -> Void {
         if pageNum != fzhPicArray.count - 1 {
             pageNum = pageNum + 1
             pageCtrl.currentPage = pageNum - 1

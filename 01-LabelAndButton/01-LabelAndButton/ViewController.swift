@@ -9,12 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let SCREEN_WIDTH = UIScreen.main.bounds.size.width
-    let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
     
     let titleLabel = UILabel()
-    let attributeBtn = UIButton.init(type: .custom)
-    let obliqueBtn = UIButton.init(type: .custom)
+    let attributeBtn = UIButton(type: .custom)
+    let obliqueBtn = UIButton(type: .custom)
     
     let attributeTag = 1000
     let obliqueTag = 1001
@@ -23,13 +21,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupSubviews()
+    }
+    
+    func setupSubviews() {
         setupLabel()
         setupButtton()
     }
     
     //Label
-    func setupLabel() -> Void {
-        titleLabel.frame = CGRect(x: 0, y: 100, width: 400, height: 0)
+    func setupLabel() {
+        titleLabel.frame = CGRect(x: 0, y: 200, width: 400, height: 0)
         //设置高度自适应该属性必须设为0
         titleLabel.numberOfLines = 0
         titleLabel.text = text
@@ -38,40 +41,39 @@ class ViewController: UIViewController {
         view.addSubview(titleLabel)
     }
     //Button
-    func setupButtton() -> Void {
-        attributeBtn.frame = CGRect(x: 150, y: 30, width: 80, height: 20)
+    func setupButtton() {
+        attributeBtn.frame = CGRect(x: 150, y: 130, width: 80, height: 20)
         attributeBtn.setTitle("attribute", for: .normal)
         attributeBtn.tag = attributeTag
         attributeBtn.backgroundColor = UIColor.black
-        attributeBtn.addTarget(self, action: #selector(btnDidTouch(btn:)), for: .touchUpInside)
+        attributeBtn.addTarget(self, action: #selector(btnDidTouch(_:)), for: .touchUpInside)
         //设置Btn的圆角
         attributeBtn.layer.cornerRadius = 5.0
         view.addSubview(attributeBtn)
         
-        obliqueBtn.frame = CGRect(x: 20, y: 30, width: 80, height: 20)
+        obliqueBtn.frame = CGRect(x: 20, y: 130, width: 80, height: 20)
         obliqueBtn.tag = obliqueTag
         obliqueBtn.setTitle("oblique", for: .normal)
         obliqueBtn.backgroundColor = UIColor.black
-        obliqueBtn.addTarget(self, action: #selector(btnDidTouch(btn:)), for: .touchUpInside)
+        obliqueBtn.addTarget(self, action: #selector(btnDidTouch(_:)), for: .touchUpInside)
         obliqueBtn.layer.cornerRadius = 5.0
         view.addSubview(obliqueBtn)
     }
     
-    func btnDidTouch(btn:UIButton) -> Void {
-        if btn.tag ==  attributeTag{//改变部分字体颜色
+    @objc func btnDidTouch(_ sender: UIButton) {
+        if sender.tag == attributeTag { //改变部分字体颜色
             let str = "是一款由Valve开发免费的多人在线战斗竞技类游戏"
-            let range = NSRange.init(location: 3, length: 5)
-            let mutableStr = NSMutableAttributedString.init(string: str)
-            //常用属性
-            //NSFontAttributeName:字体
-            //NSForegroundColorAttributeName:字体颜色
-            //NSBackgroundColorAttributeName:背景色
-            mutableStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: range)
+            let range = NSRange(location: 3, length: 5)
+            let mutableStr = NSMutableAttributedString(string: str)
+            // 常用属性
+            // - font:字体
+            // - foregroundColor:字体颜色
+            // - backgroundColor:背景色
+            mutableStr.addAttributes([.foregroundColor: UIColor.red], range: range)
             titleLabel.attributedText = mutableStr
-        }else{//设置本文倾斜度
-            titleLabel.transform = CGAffineTransform.init(rotationAngle: 0.2)
+        } else {//设置本文倾斜度
+            titleLabel.transform = CGAffineTransform(rotationAngle: 0.2)
         }
     }
-
 }
 

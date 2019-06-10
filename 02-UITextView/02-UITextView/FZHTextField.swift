@@ -18,23 +18,24 @@ class FZHTextField: UITextField {
     }
     
     //添加对键盘的监听
-    func setupTextfieldNotification() -> Void {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyWillHide), name: .UIKeyboardWillHide, object: nil)
+    func setupTextfieldNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    func keyWillShow(notification: Notification) -> Void {
-        if let keyboardF = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+    @objc func keyWillShow(notification: Notification) {
+        if let keyboardF = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.frame.origin.y < (keyboardF.origin.y - self.frame.size.height - self.frame.origin.y) {
                 return
             }
+            
             UIView.animate(withDuration: 0.25) {
                 self.transform = CGAffineTransform.init(translationX: 0, y: keyboardF.origin.y - self.frame.size.height - self.frame.origin.y)
             }
         }
     }
     
-    func keyWillHide(notification: Notification) -> Void {
+    @objc func keyWillHide(notification: Notification) {
         UIView.animate(withDuration: 0.25) {
             self.frame.origin.y = self.textFieldY
         }

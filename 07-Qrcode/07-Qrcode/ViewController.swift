@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         contentLabel.text = Content.shared.content
     }
     
-    func scanningFunc() {
+    @objc func scanningFunc() {
         let qrVC = QRViewController()
         navigationController?.pushViewController(qrVC, animated: true)
     }

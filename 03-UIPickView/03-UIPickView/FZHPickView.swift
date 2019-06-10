@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
+class FZHPickView: UIPickerView {
     
     var provinceArr: NSArray = []
     var citiesArr: NSArray = []
@@ -56,6 +56,15 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
         }
     }
     
+   
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
+
+extension FZHPickView: UIPickerViewDelegate, UIPickerViewDataSource {
     //MARK: UIPickerViewDataSource
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3
@@ -138,9 +147,4 @@ class FZHPickView: UIPickerView,UIPickerViewDelegate,UIPickerViewDataSource {
         label.font = UIFont.systemFont(ofSize: 17)
         return label
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController {
     
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
@@ -22,7 +22,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         setupCollectionView()
     }
 
-    func setupCollectionView() -> Void {
+    func setupCollectionView() {
         //初始化layout
         let layout = FZHCollectionViewLayout()
 
@@ -36,6 +36,9 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         view.addSubview(collectionView!)
 
     }
+}
+
+extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     //MARK:UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -46,10 +49,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
+        
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "FZHCollectionViewCell", for: indexPath) as! FZHCollectionViewCell
         return item
     }
-    
 }
-
