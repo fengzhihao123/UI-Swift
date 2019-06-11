@@ -12,13 +12,21 @@ class ViewController: UIViewController {
     let tableView = UITableView()
     let SCREEN_WIDTH = UIScreen.main.bounds.size.width
     let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-    var dataSource = [String]()
+    var dataSource = [Person]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupData()
         setupTableView()
         setupFooterView()
-        dataSource = ["2333", "5555", "asdf", "xxfa", "ddd", "123"]
+    }
+    
+    func setupData() {
+        for num in 0...5 {
+            let person = Person(name: "name\(num)", isSelected: false)
+            dataSource.append(person)
+        }
     }
     
     func setupTableView() {
@@ -72,20 +80,20 @@ class ViewController: UIViewController {
         } else if btn.tag == 1001 {//selectall
             if tableView.isEditing {
                 for num in 0..<dataSource.count {
-                    let index = IndexPath.init(row: num, section: 0)
+                    dataSource[num].isSelected = true
+                    let index = IndexPath(row: num, section: 0)
                     tableView.selectRow(at: index, animated: true, scrollPosition: .none)
                 }
             }
         } else if btn.tag == 1002 {//delete
             //
             let selectArray = tableView.indexPathsForSelectedRows
-            UIView.performWithoutAnimation {
-                
-            }
+          
             if selectArray != nil {
-                for indexPath in selectArray!.reversed() {
-                    dataSource.remove(at: indexPath.row)
-                }
+//                for indexPath in selectArray!.reversed() {
+//                    dataSource.remove(at: indexPath.row)
+//                }
+                dataSource.removeAll { $0.isSelected }
                 tableView.reloadData()
             }
             
@@ -108,7 +116,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = FZHTableViewCell.init(style: .default, reuseIdentifier: "FZHTableViewCell")
-        cell.titleLabel.text = dataSource[indexPath.row]
+        cell.titleLabel.text = dataSource[indexPath.row].name
         return cell
     }
     //MARK: UITableViewDelegate
@@ -132,4 +140,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.reloadData()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.isEditing {
+            dataSource[indexPath.row].isSelected = !dataSource[indexPath.row].isSelected
+        }
+    }
+}
+
+struct Person {
+    
+    var name: String
+    var isSelected: Bool
 }
